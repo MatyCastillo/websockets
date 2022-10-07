@@ -1,0 +1,14 @@
+[
+  {
+    "socketID": "TyGd6da4hu-jfPRJAAAF",
+    "timestamp": "5/10/2022, 1:05:00",
+    "inputName": "admin@chat.com",
+    "message": "Hola!"
+  },
+  {
+    "socketID": "TyGd6da4hu-jfPRJAAAF",
+    "timestamp": "5/10/2022, 1:05:10",
+    "inputName": "admin@chat.com",
+    "message": "Bienvenido al chat!"
+  }
+]

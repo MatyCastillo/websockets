@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="justify-content-center d-flex">
+      <form
+        class="w-50 p-3"
+        id="productForm"
+        name="productForm"
+        style="background: rgb(177, 177, 177); border-radius: 1%; width: 1000px"
+      >
+        <h1 class="display-4 d-flex justify-content-center">Nuevo producto</h1>
+        <div class="form-group">
+          <label for="title">Nombre del producto</label>
+          <input
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            aria-describedby="emailHelp"
+            placeholder="Nombre del producto"
+          />
+        </div>
+        <div class="form-group">
+          <label for="price">Precio</label>
+          <input
+            type="number"
+            class="form-control"
+            name="price"
+            id="price"
+            placeholder="$00.00"
+          />
+        </div>
+        <div class="form-group">
+          <label for="image">Imagen para el producto</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="image"
+            name="image"
+          />
+        </div>
+        <div class="d-flex justify-content-between">
+          <!-- <button
+            class="btn btn-primary"
+            role="link"
+            onclick="window.location='http://localhost:8080/products'"
+          >
+            Todos los Productos
+          </button> -->
+          <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <div>
+      <h1 class="display-4 d-flex justify-content-center">
+        Vista de productos
+      </h1>
+      <div class="justify-content-center d-flex" id="listContainer"></div>
+    </div>
+    <h1 class="display-4 d-flex justify-content-center">Chat</h1>
+    <div class="justify-content-center d-flex">
+      <div
+        class="w-50 p-3"
+        style="background: rgb(177, 177, 177); border-radius: 1%; width: 1000px"
+      >
+        <div class="mb-3">
+          <strong class="form-label">Historial de Mensajes</strong>
+          <ul
+            id="list-message"
+            style="background: whitesmoke; border-radius: 5px"
+          ></ul>
+        </div>
+        <strong class="form-label">Nuevo mensaje</strong>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="inputName"
+            placeholder="email@domain.com"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="message"
+            placeholder="Ingresa un mensaje"
+          />
+          <i style="color: red">Presione Enter para enviar</i>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

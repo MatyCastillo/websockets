@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "timestamp": 1665178523217,
+    "nombre": "camisa",
+    "precio": "123",
+    "foto": "http://localhost:8080/images/1637555702940.jpeg"
+  },
+  {
+    "id": 2,
+    "timestamp": 1665178617949,
+    "nombre": "pantalon",
+    "precio": "12354",
+    "foto": "http://localhost:8080/images/1637555717008.jpeg"
+  },
+  {
+    "id": 3,
+    "timestamp": 1665178617949,
+    "nombre": "remera",
+    "precio": "2242",
+    "foto": "http://localhost:8080/images/1637555805793.jpeg"
+  }
+]

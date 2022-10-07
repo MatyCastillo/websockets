@@ -1,0 +1,29 @@
+<h1 class="display-4 d-flex justify-content-center" >Vista de productos</h1>
+<div  class="mx-auto d-flex justify-content-center">
+    {{#if products.length}}
+        <table class="table rounded table-dark"  style=" width:1000px;">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                    <td>{{this.nombre}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img src="{{this.thumbnail}}" alt="Product picture" style="width:100px; height:100px; border-radius: 10%"></td>
+                </tr>
+            {{/each}}
+        </tbody>
+        </table>    
+    {{else}}
+    <div class="alert alert-danger" role="alert">
+        No se han encontrado productos
+    </div>
+    {{/if}}
+</div>

@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "camisa",
+    "price": 10000,
+    "thumbnail": "http://localhost:8080/images/1637555600664.jpeg"
+  }
+]
