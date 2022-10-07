@@ -6,7 +6,7 @@
 - Clonar el repo.
 
 ```
-git clone https://github.com/MatyCastillo/motor-de-plantilla-ejs.git
+git clone https://github.com/MatyCastillo/websockets.git
 ```
 
 - Instalar las dependencias
